@@ -20,7 +20,7 @@
     "date-fns": "^2.30.0",
     "lucide-react": "^0.544.0",
     "react": "^19.1.1",
-    "react-datepicker": "^4.25.0",
+    "react-datepicker": "^7.0.0",
     "react-dom": "^19.1.1",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.20.1",
@@ -39,5 +39,11 @@
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
     "vite": "^7.1.2"
+  },
+  "overrides": {
+    "react-datepicker": {
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1"
+    }
   }
 }
