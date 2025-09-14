@@ -1,28 +1,28 @@
 # 🏥 Appointment Booking System (Vite + React)
 
-एक आधुनिक और सुंदर appointment booking system जो Vite और React के साथ बनाया गया है। यह system customers को services book करने और admins को manage करने की सुविधा देता है।
+A modern and beautiful appointment booking system built with Vite and React. This system provides customers with the ability to book services and admins with management capabilities.
 
-## ✨ मुख्य Features (Key Features)
+## ✨ Key Features
 
 ### 🎯 Customer Features
-- **Service Browsing**: सभी available services को देखना और filter करना
-- **Real-time Availability**: Live time slots check करना
-- **Easy Booking**: Simple form के साथ booking करना
-- **Booking Confirmation**: Email और SMS confirmation
-- **Booking History**: अपनी सभी bookings देखना
-- **Reviews & Ratings**: Services के लिए reviews देना
+- **Service Browsing**: View and filter all available services
+- **Real-time Availability**: Check live time slots
+- **Easy Booking**: Book appointments with a simple form
+- **Booking Confirmation**: Email and SMS confirmation
+- **Booking History**: View all your bookings
+- **Reviews & Ratings**: Give reviews for services
 - **Dark/Light Mode**: Theme switching
 - **Multi-language Support**: Hindi/English support
-- **Responsive Design**: Mobile और desktop दोनों के लिए
+- **Responsive Design**: Works on both mobile and desktop
 
 ### 🔧 Admin Features
-- **Dashboard**: Complete analytics और statistics
-- **Booking Management**: सभी bookings को manage करना
-- **Service Management**: Services add, edit, delete करना
+- **Dashboard**: Complete analytics and statistics
+- **Booking Management**: Manage all bookings
+- **Service Management**: Add, edit, delete services
 - **Calendar View**: Visual calendar interface
-- **Customer Management**: Customer details देखना
-- **Review Management**: Reviews approve/disapprove करना
-- **Analytics**: Revenue और booking statistics
+- **Customer Management**: View customer details
+- **Review Management**: Approve/disapprove reviews
+- **Analytics**: Revenue and booking statistics
 - **Real-time Notifications**: Live updates
 
 ### 🚀 Technical Features
@@ -38,151 +38,151 @@
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
-- Node.js (v16 या उससे ऊपर)
-- npm या yarn
+- Node.js (v16 or higher)
+- npm or yarn
 
-### 1. Project Clone करें
+### 1. Clone the Project
    ```bash
 git clone <your-repo-url>
    cd appoint
    ```
 
-### 2. Dependencies Install करें
+### 2. Install Dependencies
    ```bash
-# Frontend और Backend दोनों के लिए
+# For both Frontend and Backend
 npm run install:all
 
-# या अलग-अलग
+# Or separately
 npm install                    # Frontend
 cd backend && npm install      # Backend
 ```
 
-### 3. Environment Variables Setup करें
+### 3. Setup Environment Variables
    ```bash
-# Backend के लिए
+# For Backend
 cp backend/env.example backend/.env
 
-# Frontend के लिए (optional)
+# For Frontend (optional)
    cp env.example .env
 ```
 
-### 4. Database Setup करें
+### 4. Setup Database
    ```bash
-# Database migrate करें
+# Run database migrations
 npm run db:migrate
 
-# Demo data seed करें
+# Seed demo data
 npm run db:seed
 ```
 
-### 5. Project Start करें
+### 5. Start the Project
    ```bash
-# Development mode में दोनों servers start करें
+# Start both servers in development mode
    npm run dev
 
-# या अलग-अलग
+# Or separately
 npm run backend    # Backend server (port 3001)
 npm run dev        # Frontend server (port 5173)
 ```
 
-## 📱 How to Use (कैसे Use करें)
+## 📱 How to Use
 
-### Customer के लिए:
+### For Customers:
 
-#### 1. Service Browse करना
-- Home page पर जाएं
-- Available services को देखें
-- Service details के लिए click करें
-- Price, duration, description देखें
+#### 1. Browse Services
+- Go to the home page
+- View available services
+- Click for service details
+- See price, duration, description
 
-#### 2. Booking करना
-- Service select करें
-- Date pick करें
-- Available time slots देखें
-- Personal details भरें (Name, Email, Phone)
-- "Book Now" button click करें
-- Confirmation code मिलेगा
+#### 2. Make a Booking
+- Select a service
+- Pick a date
+- View available time slots
+- Fill in personal details (Name, Email, Phone)
+- Click "Book Now" button
+- Receive confirmation code
 
-#### 3. Booking History देखना
-- Customer dashboard पर जाएं
-- Email address enter करें
-- अपनी सभी bookings देखें
-- Booking status check करें
+#### 3. View Booking History
+- Go to customer dashboard
+- Enter email address
+- View all your bookings
+- Check booking status
 
-#### 4. Review देना
-- Completed booking के बाद
-- Service page पर जाएं
-- "Write Review" button click करें
-- Rating और comment दें
-- Submit करें
+#### 4. Give Reviews
+- After completed booking
+- Go to service page
+- Click "Write Review" button
+- Give rating and comment
+- Submit
 
-### Admin के लिए:
+### For Admins:
 
-#### 1. Login करना
-- Admin login page पर जाएं
+#### 1. Login
+- Go to admin login page
 - Default credentials:
   - Email: `admin@example.com`
   - Password: `admin123`
 
-#### 2. Dashboard Use करना
-- Overview statistics देखें
-- Today's bookings check करें
-- Revenue analytics देखें
-- Popular services identify करें
+#### 2. Use Dashboard
+- View overview statistics
+- Check today's bookings
+- View revenue analytics
+- Identify popular services
 
 #### 3. Booking Management
-- All bookings list देखें
-- Filter by status या date
+- View all bookings list
+- Filter by status or date
 - Search customers
-- Booking cancel करें
-- Booking details edit करें
+- Cancel bookings
+- Edit booking details
 
 #### 4. Service Management
-- New service add करें
-- Existing services edit करें
-- Service deactivate करें
-- Service pricing update करें
+- Add new services
+- Edit existing services
+- Deactivate services
+- Update service pricing
 
 #### 5. Review Management
-- Pending reviews देखें
-- Reviews approve/disapprove करें
-- Inappropriate reviews delete करें
+- View pending reviews
+- Approve/disapprove reviews
+- Delete inappropriate reviews
 
 ## 🔧 API Endpoints
 
 ### Services
-- `GET /api/services` - सभी services list करें
+- `GET /api/services` - List all services
 - `GET /api/services/:id` - Specific service details
-- `POST /api/services` - New service create करें (Admin)
-- `PUT /api/services/:id` - Service update करें (Admin)
-- `DELETE /api/services/:id` - Service delete करें (Admin)
+- `POST /api/services` - Create new service (Admin)
+- `PUT /api/services/:id` - Update service (Admin)
+- `DELETE /api/services/:id` - Delete service (Admin)
 
 ### Bookings
-- `POST /api/book` - New booking create करें
+- `POST /api/book` - Create new booking
 - `GET /api/bookings` - All bookings (Admin)
 - `GET /api/bookings/customer/:email` - Customer bookings
 - `GET /api/bookings/:id` - Specific booking
-- `POST /api/bookings/:id/cancel` - Booking cancel करें (Admin)
+- `POST /api/bookings/:id/cancel` - Cancel booking (Admin)
 
 ### Availability
 - `GET /api/avail?service_id=1&date=2024-01-15` - Available slots
 
 ### Reviews
-- `POST /api/reviews` - New review create करें
+- `POST /api/reviews` - Create new review
 - `GET /api/reviews/service/:serviceId` - Service reviews
 - `GET /api/reviews` - All reviews (Admin)
-- `PUT /api/reviews/:id/approve` - Review approve करें (Admin)
-- `DELETE /api/reviews/:id` - Review delete करें (Admin)
+- `PUT /api/reviews/:id/approve` - Approve review (Admin)
+- `DELETE /api/reviews/:id` - Delete review (Admin)
 
 ### Authentication
 - `POST /api/auth/login` - Admin login
-- `GET /api/auth/verify` - Token verify करें
+- `GET /api/auth/verify` - Verify token
 
 ## 🎨 UI Components
 
 ### Main Pages
-- **HomePage**: Service listing और search
-- **ServiceDetailPage**: Service details और booking form
+- **HomePage**: Service listing and search
+- **ServiceDetailPage**: Service details and booking form
 - **BookingPage**: Booking process
 - **ConfirmationPage**: Booking confirmation
 - **CustomerDashboard**: Customer bookings history
@@ -264,14 +264,14 @@ DB_STORAGE=./database.sqlite
 ### Frontend (Vercel/Netlify)
 ```bash
 npm run build
-# Build files को deploy करें
+# Deploy build files
 ```
 
 ### Backend (Railway/Heroku)
 ```bash
-# Environment variables set करें
-# Database URL configure करें
-# Deploy करें
+# Set environment variables
+# Configure database URL
+# Deploy
 ```
 
 ## 🐛 Troubleshooting
@@ -280,23 +280,23 @@ npm run build
 
 1. **Port Already in Use**
    ```bash
-   # Different port use करें
+   # Use different port
    PORT=3002 npm run backend
    ```
 
 2. **Database Connection Error**
    ```bash
-   # Database file check करें
+   # Check database file
    ls -la backend/database.sqlite
    ```
 
 3. **Email Not Sending**
-   - Gmail app password check करें
-   - SMTP settings verify करें
+   - Check Gmail app password
+   - Verify SMTP settings
 
 4. **SMS Not Working**
-   - Twilio credentials check करें
-   - Phone number format verify करें
+   - Check Twilio credentials
+   - Verify phone number format
 
 ## 📝 Scripts
 
@@ -333,10 +333,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-अगर कोई problem आए तो:
-- GitHub Issues पर report करें
-- Documentation check करें
-- Code comments देखें
+If you encounter any problems:
+- Report on GitHub Issues
+- Check documentation
+- Review code comments
 
 ---
 
